@@ -9,12 +9,12 @@ import org.slf4j.LoggerFactory;
 public class GuardarContacto {
 	private static final Logger log = LoggerFactory.getLogger(GuardarContacto.class);
 	
-	public static void main(String[] args) {
+	public static void guardarContacto (){
 		
 		FileWriter escritor = null;
 
 		try {
-			escritor = new FileWriter("contactos.txt", true);
+			escritor = new FileWriter("contact.txt", true);
 			escritor.write("Nombre: Maria\n");
 			escritor.write("Apellido: Gomez\n");
 			escritor.write("Telefono: 0981234567");
